@@ -1,26 +1,3 @@
-/*import { series } from "./Data.js";
-
-const tableBody = document.querySelector("tbody")!;
-
-tableBody.innerHTML = ""; 
-    series.forEach(serie => {
-    const row = document.createElement("tr");
-    row.innerHTML = `
-        <th scope="row">${serie.id}</th>
-        <td>${serie.name}</td>
-        <td>${serie.channel}</td>
-        <td>${serie.seasons}</td>
-    `;
-    tableBody.appendChild(row);
-    });
-
-
-const averageContainer: HTMLElement = document.getElementById("average-seasons")!;
-const totalTemporadas = series.reduce((sum, serie) => sum + serie.seasons, 0);
-const promedio = totalTemporadas / series.length;
-    
-averageContainer.innerText = `Seasons average: ${promedio.toFixed(2)}`;*/
-
 import { Serie } from "./Serie.js";
 import { series } from "./Data.js";
 
@@ -53,7 +30,6 @@ function showSeries(seriesList: Serie[]): void {
 }
 
 function showDetail(serie: Serie): void {
-  console.log("Image URL:", serie.foto);
   detailCard.innerHTML = `
     <div class="card">
       <img src="${serie.foto}" class="card-img-top" alt="${serie.name}" style="max-width: 100%; height: auto;">
