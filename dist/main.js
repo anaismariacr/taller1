@@ -52,7 +52,7 @@ function showDetail(serie) {
       <div class="card-body">
         <h5 class="card-title">${serie.name}</h5>
         <p class="card-text">${serie.descripcion}</p>
-        <a href="${serie.link}" class="btn btn-primary" target="_blank">More info</a>
+        <a href="${serie.link}" class="btn btn-primary" target="_blank">Conoce mas!</a>
       </div>
     </div>
   `;
